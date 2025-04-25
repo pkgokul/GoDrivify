@@ -1,0 +1,675 @@
+{
+	"info": {
+		"_postman_id": "27b8711c-5207-4f66-9c5c-7af8b1b9d714",
+		"name": "GoDrivify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42416445"
+	},
+	"item": [
+		{
+			"name": "driverinfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "age",
+							"value": "34",
+							"type": "text"
+						},
+						{
+							"key": "experience_years",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/driverinfo.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"driverinfo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "johndoe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "john@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "secretpassword",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "contact_number",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1eff3f46-1327-4040-bdb6-9e9f2541e2c7"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/signup.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"signup.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admindashboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1eff3f46-1327-4040-bdb6-9e9f2541e2c7"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/admindashboard.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"admindashboard.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admindashboardavailability",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "availability_date",
+							"value": "2025-02-01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/admindasboardavailability.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"admindasboardavailability.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "price",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "origin",
+							"value": "chengalpet",
+							"type": "text"
+						},
+						{
+							"key": "destination",
+							"value": "chennai",
+							"type": "text"
+						},
+						{
+							"key": "days",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/price.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"price.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertavailability",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "availability",
+							"value": "Yes",
+							"type": "text"
+						},
+						{
+							"key": "availability_date",
+							"value": "2025-01-07",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/insertavailability.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"insertavailability.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new cars",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "car_name",
+							"value": "Toyota Coroll new",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1eff3f9c-cf77-4370-9125-a120f242933b"
+						},
+						{
+							"key": "condition",
+							"value": "New",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/cars.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"cars.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch all cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/fetchcars.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"fetchcars.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetch single car info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/fetchcars.php?userid=23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"fetchcars.php"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userchecking",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "touch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "availability_date",
+							"value": "2025-03-01",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/touchavailability.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"touchavailability.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookingdetalils",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/bookindetails.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"bookindetails.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchprofile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/fetchprofile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"fetchprofile.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insertbooking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userid",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "driver_id",
+							"value": "456",
+							"type": "text"
+						},
+						{
+							"key": "dateofbooking",
+							"value": "2025-02-26",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "confirmed",
+							"type": "text"
+						},
+						{
+							"key": "pickup",
+							"value": "Location A",
+							"type": "text"
+						},
+						{
+							"key": "drop",
+							"value": "Location B",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/insertbookingdetails.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"insertbookingdetails.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetckdriverprofile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "driver_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/fetchdriverprofile.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"fetchdriverprofile.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatebookingdetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "booking_id",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "accepted",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/update_booking_status.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"update_booking_status.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fetchbookingdetails",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userid",
+							"value": "23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/GoDrivify/fetch_booking_details.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"GoDrivify",
+						"fetch_booking_details.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Driver adtional Info",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
